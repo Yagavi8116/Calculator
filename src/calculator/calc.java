@@ -68,6 +68,11 @@ public class calc extends javax.swing.JFrame {
 
         jButton10.setBackground(new java.awt.Color(219, 216, 144));
         jButton10.setText("7");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jTextField1.setBackground(new java.awt.Color(245, 241, 184));
 
@@ -81,6 +86,11 @@ public class calc extends javax.swing.JFrame {
 
         jButton12.setBackground(new java.awt.Color(219, 216, 144));
         jButton12.setText("9");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         jButton13.setBackground(new java.awt.Color(219, 216, 144));
         jButton13.setText("-");
@@ -92,12 +102,22 @@ public class calc extends javax.swing.JFrame {
 
         jButton14.setBackground(new java.awt.Color(219, 216, 144));
         jButton14.setText("6");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
         jButton15.setBackground(new java.awt.Color(219, 216, 144));
         jButton15.setText("X");
 
         jButton16.setBackground(new java.awt.Color(219, 216, 144));
         jButton16.setText("4");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jButton17.setBackground(new java.awt.Color(219, 216, 144));
         jButton17.setText("C");
@@ -112,6 +132,11 @@ public class calc extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(219, 216, 144));
         jButton1.setText("0");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(219, 216, 144));
         jButton2.setText(".");
@@ -121,18 +146,38 @@ public class calc extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(219, 216, 144));
         jButton4.setText("00");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setBackground(new java.awt.Color(219, 216, 144));
         jButton5.setText("÷");
 
         jButton6.setBackground(new java.awt.Color(219, 216, 144));
         jButton6.setText("3");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setBackground(new java.awt.Color(219, 216, 144));
         jButton7.setText("2");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setBackground(new java.awt.Color(219, 216, 144));
         jButton8.setText("1");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton19.setBackground(new java.awt.Color(219, 216, 144));
         jButton19.setText("ERASE");
@@ -144,6 +189,11 @@ public class calc extends javax.swing.JFrame {
 
         jButton9.setBackground(new java.awt.Color(219, 216, 144));
         jButton9.setText("5");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton20.setBackground(new java.awt.Color(219, 216, 144));
         jButton20.setText("+");
@@ -264,7 +314,10 @@ public class calc extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
+        String var = jTextField1.getText();
+        var = var + "8";
+        jTextField1.setText(var);
+
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
@@ -282,6 +335,66 @@ public class calc extends javax.swing.JFrame {
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "7";
+        jTextField1.setText(var);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "9";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "4";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "5";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "6";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "1";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "2";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "3";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "0";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String var = jTextField1.getText();
+        var = var + "00";
+        jTextField1.setText(var);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
